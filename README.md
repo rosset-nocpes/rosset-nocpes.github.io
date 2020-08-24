@@ -2,9 +2,9 @@
 
 You can download calculator in two version in .exe and .py.
 
-### Download
+## Download
 
-## Calculator v0.1-beta
+### Calculator v0.1-beta
 
 - [Calculator_v0.1-beta.exe](/downloads/Calculator_v0.1-beta.exe)
 
