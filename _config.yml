@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+title: Calculator v0.1-beta is out!
+description: Calculator writen on python.
+show_downloads: true
