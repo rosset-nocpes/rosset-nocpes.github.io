@@ -17,6 +17,10 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 <iframe src="https://discord.com/widget?id=611521033165340697&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
+<a href="http://duckduckgo.com" target="_blank">
+	<button>Click me!</button>
+</a>
+
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
