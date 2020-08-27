@@ -3,7 +3,7 @@
 $(document).ready(function() {
 						   
 	$(".countdown").countdown({
-				date: "27 aug 2020 18:30:00",
+				date: "30 aug 2020 18:30:00",
 				format: "on"
 			},
 			
