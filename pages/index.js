@@ -36,7 +36,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/coderpy.4" target="_blank" rel="noopener noreferrer">
           Made with ❤️ by CoderPY4
         </a>
       </footer>
