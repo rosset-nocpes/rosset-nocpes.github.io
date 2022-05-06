@@ -13,7 +13,7 @@ export default function Home() {
           rel="icon"
           href="https://cdn-icons.flaticon.com/png/512/5305/premium/5305390.png?token=exp=1639422002~hmac=dfc628845749712553eb322609b83284"
         />
-        <script src="https://app.giveforms.com/new/widget-install.js" type="text/javascript"></script>
+        <script strategy="beforeInteractive" src="https://app.giveforms.com/new/widget-install.js" type="text/javascript"></script>
       </Head>
 
       <main className={styles.main}>
