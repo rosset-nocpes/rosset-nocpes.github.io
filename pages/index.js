@@ -13,7 +13,7 @@ export default function Home() {
           rel="icon"
           href="https://cdn-icons.flaticon.com/png/512/5305/premium/5305390.png?token=exp=1639422002~hmac=dfc628845749712553eb322609b83284"
         />
-        <script strategy="beforeInteractive" src="https://app.giveforms.com/new/widget-install.js" type="text/javascript"></script>
+        <script src="https://app.giveforms.com/new/widget-install.js" type="text/javascript" strategy="beforeInteractive"></script>
       </Head>
 
       <main className={styles.main}>
@@ -34,12 +34,12 @@ export default function Home() {
               our blog!
             </p>
           </a>
-          <a href="https://app.giveforms.com/forms/projectsofzero/default-giveform-2?type=popup" data-giveform="gf-widget" className={styles.card}>
-            <h2>Support Me &#10140;</h2>
+          {/* <a href="https://app.giveforms.com/forms/projectsofzero/default-giveform-2?type=popup" data-giveform="gf-widget" className={styles.card}>
+            <h3>Support Me &#10140;</h3>
             <p>
               You can donate to our project. I will be very grateful for your support.
             </p>
-          </a>
+          </a> */}
         </div>
       </main>
 
