@@ -26,3 +26,14 @@ document.querySelector("a").onmouseover = event => {
     iteration += 1 / 3;
   }, 30);
 }
+
+const blob = document.getElementById("blob");
+
+window.onpointermove = event => {
+  const { clientX, clientY } = event;
+
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY}px`
+  }, { duration: 3000, fill: "forwards" });
+}
