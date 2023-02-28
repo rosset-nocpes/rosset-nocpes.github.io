@@ -256,7 +256,7 @@ h5 {
 
 @font-face {
 	font-family: 'Monoflow';
-	src: url('/fonts/monoflow-regular.otf') format('otf');
+	src: url('/fonts/monoflow-regular.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
