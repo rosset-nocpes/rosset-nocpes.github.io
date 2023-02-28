@@ -253,3 +253,11 @@ h5 {
 		gap: 12rem;
 	}
 }
+
+@font-face {
+	font-family: 'Monoflow';
+	src: url('/fonts/monoflow-regular.otf) format('otf');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
