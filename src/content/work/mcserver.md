@@ -12,3 +12,5 @@ tags:
 ---
 
 Nice MC server for friends and other people. We don't have any of the private chunks plugins. All building on the trust!
+
+Our Discord server: https://discord.gg/PqrYdYKhvm
