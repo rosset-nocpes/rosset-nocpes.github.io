@@ -14,3 +14,16 @@ tags:
 Nice MC server for friends and other people. We don't have any of the private chunks plugins. All building on the trust!
 
 Our Discord server: https://discord.gg/PqrYdYKhvm
+
+---
+
+<iframe
+  src="https://lu.ma/embed-checkout/evt-uLPY3QtymTXVbLk"
+  width="600"
+  height="600"
+  frameborder="0"
+  style="border: 1px solid #bfcbda88; border-radius: 4px;"
+  allowfullscreen=""
+  aria-hidden="false"
+  tabindex="0"
+></iframe>
