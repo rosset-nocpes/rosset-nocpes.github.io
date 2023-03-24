@@ -12,7 +12,7 @@
 
 👤 **Andrii Blacksmith**
 
-* Website: projectsofzero.vercel.app
+* Website: [projectsofzero.vercel.app](https://projectsofzero.vercel.app)
 * Twitter: [@CoderPY4](https://twitter.com/CoderPY4)
 * Github: [@coderpy4](https://github.com/coderpy4)
 
