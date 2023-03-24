@@ -27,7 +27,7 @@ You can download calculator in two version in .exe and .py.
 
 #### Download
 
-##### Calculator v0.2
+##### Calculator v0.2.1
 
 - [Download!](https://github.com/CoderPY4/calculator/releases)
 
