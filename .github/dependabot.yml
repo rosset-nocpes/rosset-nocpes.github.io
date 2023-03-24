@@ -4,3 +4,14 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    labels:
+      - "base branch dependencies"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule: 
+      interval: "weekly"
+    target-branch: "on-test"
+    labels:
+      - "own-test branch dependencies"
+
