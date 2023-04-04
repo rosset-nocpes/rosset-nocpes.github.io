@@ -7,6 +7,9 @@
 </p>
 
 > My portfolio for projects.
+**Current projects:**
+* CalculatorPY
+* Shawarma Torinas
 
 ## Author
 
