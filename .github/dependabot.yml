@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "base branch dependencies"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule: 
+      interval: "weekly"
+    target-branch: "own-test"
+    labels:
+      - "own-test branch dependencies"
+
