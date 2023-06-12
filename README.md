@@ -15,7 +15,7 @@
 
 👤 **Andrii Blacksmith**
 
-* Website: [projectsofzero.vercel.app](https://projectsofzero.vercel.app)
+* Website: [coderpy4.is-a.dev](https://coderpy4.is-a.dev)
 * Mastodon: [@coderpy4@fosstodon.org](https://fosstodon.org/@coderpy4)
 * Github: [@coderpy4](https://github.com/coderpy4)
 
