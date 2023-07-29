@@ -1,21 +1,35 @@
 {
-	"name": "cpy4_portfolio",
-	"type": "module",
-	"version": "0.0.2",
+	"name": "website",
+	"version": "0.0.1",
 	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro"
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
 	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "^1.0.0",
+		"@types/cookie": "^0.5.1",
+		"@typescript-eslint/eslint-plugin": "^5.27.0",
+		"@typescript-eslint/parser": "^5.27.0",
+		"eslint": "^8.16.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.6.2",
+		"prettier-plugin-svelte": "^2.7.0",
+		"svelte": "^3.46.0",
+		"svelte-check": "^2.7.1",
+		"svelte-preprocess": "^4.10.6",
+		"tslib": "^2.3.1",
+		"typescript": "^4.7.4"
+	},
+	"type": "module",
 	"dependencies": {
-		"@astrojs/rss": "^2.4.3",
-		"@barba/core": "^2.9.7",
-		"astro": "^2.9.1",
-		"astro-icon": "^0.8.1",
-		"gsap": "^3.12.2",
-		"markdown-it": "^13.0.1",
-		"sanitize-html": "^2.11.0"
+		"sass": "^1.58.3",
+		"typescript": "^4.8.4"
 	}
 }
