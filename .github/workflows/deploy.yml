@@ -3,6 +3,9 @@ name: Deploy website to Pages
 on:
   push:
     branches: ['master']
+    paths-ignore:
+      - 'README.md'
+      - '.devcontainer/**'
   workflow_dispatch:
 
 permissions:
