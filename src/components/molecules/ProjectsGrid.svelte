@@ -1,25 +1,11 @@
 <script>
-	import Artwork from '../atoms/Artwork.svelte';
+	import Project from '../atoms/Project.svelte';
 </script>
 
 <div class="grid-container">
 	<div class="grid">
-		<Artwork art="painted_red" tall />
-		<Artwork art="drowning" />
-		<Artwork art="BL1NG!" tall />
-		<Artwork art="811" />
-		<Artwork art="diverge" tall />
-		<Artwork art="FADE" tall />
-		<Artwork
-			art="flandre"
-			tall
-			shrink
-			commission
-			subtitle="Commissioned by Kevin T. · Do not use"
-		/>
-		<Artwork art="ribbons" tall />
-		<Artwork art="asumi" />
-		<Artwork art="doodle" />
+		<Project img="stmc" type="png" />
+		<Project img="calcpy" type="gif" />
 	</div>
 </div>
 
@@ -28,12 +14,12 @@
 
 	.grid {
 		gap: 0.8rem;
-		grid-auto-rows: 230px;
+		grid-auto-rows: 190px;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 		width: min(90%, 72rem);
 
 		@media screen and (max-width: 600px) {
