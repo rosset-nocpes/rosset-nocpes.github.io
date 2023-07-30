@@ -4,8 +4,6 @@
 	import '../styles/fonts.scss';
 	import Cursor from '../components/atoms/Cursor.svelte';
 
-	export const prerender = true;
-
 	let loading = true;
 	let playSFX: (() => void) | undefined;
 
