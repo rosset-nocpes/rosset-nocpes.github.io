@@ -32,9 +32,9 @@
 
 <svelte:head>
 	{#if clicked}
-		<title>afn · {img}</title>
+		<title>~r.s · {img}</title>
 	{:else}
-		<title>afn</title>
+		<title>~r.s</title>
 	{/if}
 </svelte:head>
 
