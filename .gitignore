@@ -1,10 +1,5 @@
 # build output
 dist/
-# generated types
-.astro/
-
-# dependencies
-node_modules/
 
 # logs
 npm-debug.log*
@@ -23,3 +18,9 @@ pnpm-debug.log*
 # IDEs
 .vscode/
 .idea/
+
+node_modules
+/build
+/.svelte-kit
+/package
+!.env.example
