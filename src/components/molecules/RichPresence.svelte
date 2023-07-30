@@ -1,4 +1,5 @@
 <script lang="ts">
+	// TODO Rework
 	import { onMount } from 'svelte';
 	import Tooltip from '../atoms/Tooltip.svelte';
 
