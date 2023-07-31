@@ -8,6 +8,8 @@
 	export let img = '';
 	export let subtitle = 'Click anywhere to dismiss';
 	export let type = '';
+	export let title = '';
+	export let description = '';
 
 	let clicked = false;
 
@@ -49,9 +51,15 @@
 		in:fly={{ y: 50, easing: quintOut, duration: 750 }}
 		out:fly={{ y: 50, easing: cubicOut, duration: 300 }}
 	>
-		<h3>{img}</h3>
-		<img src="art/{img}.{type}" alt={img} />
-		<h6>{subtitle}</h6>
+		<section>
+			<!--<h3>{img}</h3>-->
+			<img src="art/{img}.{type}" alt={img} />
+			<div class="texted">
+				<h2>{title}</h2>
+				<h5>{description}</h5>
+				<h6>{subtitle}</h6>
+			</div>
+		</section>
 	</div>
 {/if}
 
@@ -88,7 +96,6 @@
 	.img-modal {
 		background-blend-mode: overlay;
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		position: fixed;
@@ -106,7 +113,7 @@
 		-webkit-backdrop-filter: blur(12px);
 
 		img {
-			max-height: 83vh;
+			max-height: 32vh;
 			height: auto;
 			max-width: 86vw;
 			border-radius: 2vh;
@@ -130,6 +137,29 @@
 		font-size: 3.5vh;
 		font-weight: 500;
 		color: var(--white);
+		display: flex;
+	}
+
+	h2 {
+		display: flex;
+	}
+
+	h5 {
+		display: flex;
+	}
+
+	section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: min(90%, 70rem) !important;
+	}
+
+	.texted {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		margin-left: 1rem;
 	}
 
 	.tall {
