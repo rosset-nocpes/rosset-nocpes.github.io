@@ -5,7 +5,7 @@
 <div class="grid-container">
 	<div class="grid">
 		<Project img="stmc" type="png" title="Hello test" description="Nice MC server for friends and other people. We don't have any of the private chunks plugins. All building on the trust! Our Discord server: https://discord.gg/PqrYdYKhvm" />
-		<Project img="calcpy" type="gif" title="CalculatorPY" description="Calculator writen on Python. Very simple calculator for 2-3 actions, also has support function." />
+		<Project img="calcpy" type="gif" title="CalculatorPY" description="Calculator writen on Python. Very simple calculator for 2-3 actions, also has support function." buttonText="Try it!" />
 	</div>
 </div>
 

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { cubicOut, quintOut } from 'svelte/easing';
+	import Button from './Button.svelte';
 
 	export let tall = false;
 	export let shrink = false;
@@ -10,6 +11,7 @@
 	export let type = '';
 	export let title = '';
 	export let description = '';
+	export let buttonText = '';
 
 	let clicked = false;
 
@@ -57,6 +59,9 @@
 			<div class="texted">
 				<h2>{title}</h2>
 				<h5>{description}</h5>
+				<div class="margin-top-b">
+					<Button>{buttonText}</Button>
+				</div>
 				<h6>{subtitle}</h6>
 			</div>
 		</section>
@@ -160,6 +165,10 @@
 		flex-direction: column;
 		text-align: left;
 		margin-left: 1rem;
+	}
+
+	.margin-top-b {
+		margin-top: 2vh;
 	}
 
 	.tall {
