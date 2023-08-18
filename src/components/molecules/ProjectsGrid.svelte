@@ -4,8 +4,18 @@
 
 <div class="grid-container">
 	<div class="grid">
-		<Project img="stmc" type="png" title="Hello test" description="Nice MC server for friends and other people. We don't have any of the private chunks plugins. All building on the trust! Our Discord server: https://discord.gg/PqrYdYKhvm" />
-		<Project img="calcpy" type="gif" title="CalculatorPY" description="Calculator writen on Python. Very simple calculator for 2-3 actions, also has support function." buttonText="Try it!" />
+		<Project
+			img="roptimiceps.png"
+			title="Roptimiceps"
+			description="Own modpack tha I created to optimize and improve gameplay of Minecraft"
+			buttonText="Modrinth"
+			href="https://modrinth.com/modpack/roptimiceps" />
+		<Project
+			img="calcpy.gif"
+			title="CalculatorPY"
+			description="Calculator writen on Python. Very simple calculator for 2-3 actions, also has support function."
+			buttonText="GitHub"
+			href="https://github.com/coderpy4/calculatorPY" />
 	</div>
 </div>
 
@@ -15,11 +25,10 @@
 	.grid {
 		gap: 0.8rem;
 		grid-auto-rows: 190px;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(350px, auto));
 		width: min(90%, 72rem);
 
 		@media screen and (max-width: 600px) {

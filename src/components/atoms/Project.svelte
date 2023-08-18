@@ -8,10 +8,10 @@
 	export let commission = false;
 	export let img = '';
 	export let subtitle = 'Click anywhere to dismiss';
-	export let type = '';
 	export let title = '';
 	export let description = '';
 	export let buttonText = '';
+	export let href = '';
 
 	let clicked = false;
 
@@ -26,8 +26,8 @@
 	class="card"
 	class:tall
 	class:shrink
-	style="background-image:url(art/{img}.{type})"
-	aria-label={img}
+	style="background-image:url(art/{img})"
+	aria-label={title}
 	on:click={() => (clicked = true)}
 	on:keypress={() => (clicked = true)}
 />
@@ -36,7 +36,7 @@
 
 <svelte:head>
 	{#if clicked}
-		<title>~r.s · {img}</title>
+		<title>~r.s · {title}</title>
 	{:else}
 		<title>~r.s</title>
 	{/if}
@@ -55,12 +55,14 @@
 	>
 		<section>
 			<!--<h3>{img}</h3>-->
-			<img src="art/{img}.{type}" alt={img} />
+			<img src="art/{img}" alt={title} />
 			<div class="texted">
 				<h2>{title}</h2>
 				<h5>{description}</h5>
 				<div class="margin-top-b">
-					<Button>{buttonText}</Button>
+					<a href={href} target="_blank">
+						<Button>{buttonText}</Button>
+					</a>
 				</div>
 				<h6>{subtitle}</h6>
 			</div>
@@ -130,7 +132,7 @@
 
 	h3,
 	h6 {
-		margin: 1vh;
+		margin-top: 1vh;
 	}
 
 	h6 {
@@ -158,6 +160,10 @@
 		align-items: center;
 		justify-content: center;
 		width: min(90%, 70rem) !important;
+	}
+
+	a {
+		text-decoration: none;
 	}
 
 	.texted {
