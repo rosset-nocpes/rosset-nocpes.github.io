@@ -187,4 +187,10 @@
 			background-position: top;
 		}
 	}
+
+	@media screen and (max-width: 868px) {
+		section {
+			flex-direction: column;
+		}
+	}
 </style>

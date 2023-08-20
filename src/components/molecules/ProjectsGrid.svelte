@@ -4,12 +4,12 @@
 
 <div class="grid-container">
 	<div class="grid">
-		<Project
+		<!--<Project
 			img="roptimiceps.png"
 			title="Roptimiceps"
 			description="Own modpack tha I created to optimize and improve gameplay of Minecraft"
 			buttonText="Modrinth"
-			href="https://modrinth.com/modpack/roptimiceps" />
+			href="https://modrinth.com/modpack/roptimiceps" />--> <!-- TODO When will be ready -->
 		<Project
 			img="calcpy.gif"
 			title="CalculatorPY"
