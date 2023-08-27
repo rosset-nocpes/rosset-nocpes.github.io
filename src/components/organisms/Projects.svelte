@@ -1,15 +1,15 @@
 <script>
-	import ArtGrid from '../../components/molecules/ArtGrid.svelte';
+	import ProjectsGrid from '../molecules/ProjectsGrid.svelte';
 	import Tooltip from '../atoms/Tooltip.svelte';
 </script>
 
 <section>
-	<div class="wrapper" id="aw">
-		<Tooltip tip="Click on an artwork">
-			<h2><span>art</span>:work</h2>
+	<div class="wrapper" id="projects">
+		<Tooltip tip="Click on an project">
+			<h2><span>projects</span>:lol</h2>
 		</Tooltip>
 	</div>
-	<ArtGrid />
+	<ProjectsGrid />
 </section>
 
 <style lang="scss">

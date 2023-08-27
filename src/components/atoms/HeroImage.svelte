@@ -18,11 +18,12 @@
 </script>
 
 <div class="img-container">
+	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div
 		on:mousemove={enterRotate3D}
 		on:mouseleave={leaveRotate3D}
 		class="img"
-		style:background-image="url(art/rosset-nocpes.webp)"
+		style:background-image="url(images/rosset-nocpes.webp)"
 		style:transform="perspective(500px) {zoom ? 'scale(1.05)' : ''} rotateX({xRotation}deg) rotateY({yRotation}deg)"
 	/>
 </div>

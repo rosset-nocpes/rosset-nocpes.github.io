@@ -3,7 +3,7 @@
 	import Tooltip from '../atoms/Tooltip.svelte';
 
 	let getAge = () => {
-		let birthDate = new Date('2008/08/30');
+		let birthDate = new Date(2008, 8, 30);
 		const ageMs = Date.now() - birthDate.getTime();
 		const preciseAge = (ageMs / 31536000000).toFixed(10);
 		return preciseAge;

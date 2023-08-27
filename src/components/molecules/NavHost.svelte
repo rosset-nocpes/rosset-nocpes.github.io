@@ -8,7 +8,7 @@
 		<ul>
 			<Nav href="#home" section="/" isSelected={y < 350} />
 			<Nav href="#about" section="about" isSelected={y > 350 && y < 675} />
-			<!--<Nav href="#aw" section="/projects/" isSelected={y > 675} />-->
+			<Nav href="#projects" section="projects" isSelected={y > 675} />
 		</ul>
 	</div>
 </nav>
@@ -45,6 +45,7 @@
 	@media (min-width: 868px) {
 		div {
 			width: auto;
+			padding: 1rem 8rem;
 			border-radius: 12px;
 		}
 		.scrolled {

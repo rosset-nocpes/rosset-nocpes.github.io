@@ -1,12 +1,17 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { cubicOut, quintOut } from 'svelte/easing';
+	import Button from './Button.svelte';
 
 	export let tall = false;
 	export let shrink = false;
 	export let commission = false;
-	export let art = '';
+	export let img = '';
 	export let subtitle = 'Click anywhere to dismiss';
+	export let title = '';
+	export let description = '';
+	export let buttonText = '';
+	export let href = '';
 
 	let clicked = false;
 
@@ -21,8 +26,8 @@
 	class="card"
 	class:tall
 	class:shrink
-	style="background-image:url(art/{art}.webp)"
-	aria-label={art}
+	style="background-image:url(images/{img})"
+	aria-label={title}
 	on:click={() => (clicked = true)}
 	on:keypress={() => (clicked = true)}
 />
@@ -31,14 +36,15 @@
 
 <svelte:head>
 	{#if clicked}
-		<title>afn · {art}</title>
+		<title>~r.s · {title}</title>
 	{:else}
-		<title>afn</title>
+		<title>~r.s</title>
 	{/if}
 </svelte:head>
 
 {#if clicked === true}
-	<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+	<!-- svelte-ignore a11y-no-noninteractive-tabindex 
+		a11y-no-static-element-interactions -->
 	<div
 		class="img-modal"
 		oncontextmenu={commission ? 'return false;' : ''}
@@ -48,9 +54,20 @@
 		in:fly={{ y: 50, easing: quintOut, duration: 750 }}
 		out:fly={{ y: 50, easing: cubicOut, duration: 300 }}
 	>
-		<h3>{art}</h3>
-		<img src="art/{art}.webp" alt={art} />
-		<h6>{subtitle}</h6>
+		<section>
+			<!--<h3>{img}</h3>-->
+			<img src="images/{img}" alt={title} />
+			<div class="texted">
+				<h2>{title}</h2>
+				<h5>{description}</h5>
+				<div class="margin-top-b">
+					<a href={href} target="_blank">
+						<Button>{buttonText}</Button>
+					</a>
+				</div>
+				<h6>{subtitle}</h6>
+			</div>
+		</section>
 	</div>
 {/if}
 
@@ -61,7 +78,7 @@
 		padding: none;
 		height: 100%;
 		width: 100%;
-		border-radius: 4px;
+		border-radius: 16px;
 		overflow: hidden;
 		background: var(--neutral-one);
 		transition: all 0.3s var(--bezier-one);
@@ -87,7 +104,6 @@
 	.img-modal {
 		background-blend-mode: overlay;
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		position: fixed;
@@ -105,7 +121,7 @@
 		-webkit-backdrop-filter: blur(12px);
 
 		img {
-			max-height: 83vh;
+			max-height: 32vh;
 			height: auto;
 			max-width: 86vw;
 			border-radius: 2vh;
@@ -117,7 +133,7 @@
 
 	h3,
 	h6 {
-		margin: 1vh;
+		margin-top: 1vh;
 	}
 
 	h6 {
@@ -129,6 +145,37 @@
 		font-size: 3.5vh;
 		font-weight: 500;
 		color: var(--white);
+		display: flex;
+	}
+
+	h2 {
+		display: flex;
+	}
+
+	h5 {
+		display: flex;
+	}
+
+	section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: min(90%, 70rem) !important;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.texted {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		margin-left: 1rem;
+	}
+
+	.margin-top-b {
+		margin-top: 2vh;
 	}
 
 	.tall {
@@ -139,6 +186,12 @@
 		.shrink {
 			grid-row: span 1 / auto;
 			background-position: top;
+		}
+	}
+
+	@media screen and (max-width: 868px) {
+		section {
+			flex-direction: column;
 		}
 	}
 </style>

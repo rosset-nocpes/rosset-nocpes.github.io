@@ -1,25 +1,21 @@
 <script>
-	import Artwork from '../atoms/Artwork.svelte';
+	import Project from '../atoms/Project.svelte';
 </script>
 
 <div class="grid-container">
 	<div class="grid">
-		<Artwork art="painted_red" tall />
-		<Artwork art="drowning" />
-		<Artwork art="BL1NG!" tall />
-		<Artwork art="811" />
-		<Artwork art="diverge" tall />
-		<Artwork art="FADE" tall />
-		<Artwork
-			art="flandre"
-			tall
-			shrink
-			commission
-			subtitle="Commissioned by Kevin T. · Do not use"
-		/>
-		<Artwork art="ribbons" tall />
-		<Artwork art="asumi" />
-		<Artwork art="doodle" />
+		<!--<Project
+			img="roptimiceps.png"
+			title="Roptimiceps"
+			description="Own modpack tha I created to optimize and improve gameplay of Minecraft"
+			buttonText="Modrinth"
+			href="https://modrinth.com/modpack/roptimiceps" />--> <!-- TODO When will be ready -->
+		<Project
+			img="calcpy.gif"
+			title="CalculatorPY"
+			description="Calculator writen on Python. Very simple calculator for 2-3 actions, also has support function."
+			buttonText="GitHub"
+			href="https://github.com/coderpy4/calculatorPY" />
 	</div>
 </div>
 
@@ -28,12 +24,11 @@
 
 	.grid {
 		gap: 0.8rem;
-		grid-auto-rows: 230px;
-		flex-direction: column;
+		grid-auto-rows: 190px;
 		justify-content: center;
 		align-items: center;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(350px, auto));
 		width: min(90%, 72rem);
 
 		@media screen and (max-width: 600px) {
