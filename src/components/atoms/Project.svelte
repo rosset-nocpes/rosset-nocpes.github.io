@@ -26,7 +26,7 @@
 	class="card"
 	class:tall
 	class:shrink
-	style="background-image:url(art/{img})"
+	style="background-image:url(images/{img})"
 	aria-label={title}
 	on:click={() => (clicked = true)}
 	on:keypress={() => (clicked = true)}
@@ -43,7 +43,8 @@
 </svelte:head>
 
 {#if clicked === true}
-	<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+	<!-- svelte-ignore a11y-no-noninteractive-tabindex 
+		a11y-no-static-element-interactions -->
 	<div
 		class="img-modal"
 		oncontextmenu={commission ? 'return false;' : ''}
@@ -55,7 +56,7 @@
 	>
 		<section>
 			<!--<h3>{img}</h3>-->
-			<img src="art/{img}" alt={title} />
+			<img src="images/{img}" alt={title} />
 			<div class="texted">
 				<h2>{title}</h2>
 				<h5>{description}</h5>
@@ -77,7 +78,7 @@
 		padding: none;
 		height: 100%;
 		width: 100%;
-		border-radius: 4px;
+		border-radius: 16px;
 		overflow: hidden;
 		background: var(--neutral-one);
 		transition: all 0.3s var(--bezier-one);
