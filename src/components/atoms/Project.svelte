@@ -189,9 +189,13 @@
 		}
 	}
 
-	@media screen and (max-width: 868px) {
+	@media screen and (max-width: 856px) {
 		section {
 			flex-direction: column;
+		}
+
+		.img-modal {
+			margin-bottom: 1vh;
 		}
 	}
 </style>
