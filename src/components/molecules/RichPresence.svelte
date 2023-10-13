@@ -8,7 +8,7 @@
 
 	let activity = `@${user.username}`,
 		details = 'Fetching...',
-		activityImage = 'default.webp',
+		activityImage = `https://api.lanyard.rest/${user.id}.webp`,
 		pulse = 30000,
 		activityNumber = 0,
 		state: string,
@@ -128,7 +128,7 @@
 						activity = `@${user.username}`;
 						details = data.discord_status.charAt(0).toUpperCase() + data.discord_status.slice(1);
 						details = details === 'Dnd' ? 'Do Not Disturb' : details;
-						activityImage = 'default.webp';
+						activityImage = `https://api.lanyard.rest/${user.id}.webp`;
 						smallImage = '';
 						cancelAnimationFrame(currentRequestAnimationFrame);
 						tick();
