@@ -5,13 +5,10 @@ updates:
     schedule:
       interval: "weekly"
     labels:
-      - "base branch dependencies"
-
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule: 
-      interval: "weekly"
-    target-branch: "own-test"
-    labels:
-      - "own-test branch dependencies"
+      - "master branch dependencies"
+    groups:
+      dev-dependency:
+        dependency-type: "development"
+      production-dependencies:
+        dependency-type: "production"
 
