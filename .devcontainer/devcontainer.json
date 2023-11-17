@@ -6,7 +6,8 @@
 "customizations": {
 	"vscode": {
 		"extensions": [
-			"antfu.vite"
+			"antfu.vite",
+			"svelte.svelte-vscode"
 		]
 	}
 }

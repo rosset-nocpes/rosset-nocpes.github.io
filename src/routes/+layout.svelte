@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 	import '../styles/global.scss';
 	import '../styles/fonts.scss';
-	import Cursor from '../components/atoms/Cursor.svelte';
 
 	let loading = true;
 	let playSFX: (() => void) | undefined;
@@ -68,7 +67,6 @@
 
 <svelte:window on:click={playSFX} />
 
-<Cursor />
 <span class:loading>
 	<slot />
 </span>
