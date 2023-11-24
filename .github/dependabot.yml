@@ -12,3 +12,15 @@ updates:
       production-dependencies:
         dependency-type: "production"
 
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      terget-branch: "dev"
+    labels:
+      - "dev branch dependencies"
+    groups:
+      dev-dependency:
+        dependency-type: "development"
+      production-dependencies:
+        dependency-type: "production"
