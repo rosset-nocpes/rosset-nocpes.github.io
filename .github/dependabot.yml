@@ -16,7 +16,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      terget-branch: "dev"
+      target-branch: "dev"
     labels:
       - "dev branch dependencies"
     groups:
