@@ -5,6 +5,10 @@
 },
 "customizations": {
 	"vscode": {
+		"settings": {
+			"vite.buildCommand": "pnpm run build",
+			"vite.devCommand": "pnpm run dev"
+		},
 		"extensions": [
 			"antfu.vite",
 			"svelte.svelte-vscode"
