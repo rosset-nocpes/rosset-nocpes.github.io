@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to portfolio | coderpy4 👋</h1>
+<h1 align="center">Welcome to portfolio | rosset-nocpes 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-v2.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://fosstodon.org/@coderpy4" target="_blank">
@@ -12,9 +12,9 @@
 
 👤 **Andrii Blacksmith**
 
-* Website: [coderpy4.is-a.dev](https://coderpy4.is-a.dev)
+* Website: [rosset-nocpes.github.io](https://rosset-nocpes.github.io)
 * Mastodon: [@coderpy4@fosstodon.org](https://fosstodon.org/@coderpy4)
-* Github: [@coderpy4](https://github.com/coderpy4)
+* Github: [@rosset-nocpes](https://github.com/rosset-nocpes)
 
 ## Show your support
 
