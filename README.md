@@ -13,9 +13,9 @@
 
 👤 **Andrii Blacksmith**
 
-* Website: [coderpy4.is-a.dev](https://coderpy4.is-a.dev)
+* Website: [rosset-nocpes.github.io](https://rosset-nocpes.github.io)
 * Mastodon: [@coderpy4@fosstodon.org](https://fosstodon.org/@coderpy4)
-* Github: [@coderpy4](https://github.com/coderpy4)
+* Github: [@rosset-nocpes](https://github.com/rosset-nocpes)
 
 ## Show your support
 
