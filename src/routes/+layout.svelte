@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import '../styles/global.scss';
-	import '../styles/fonts.scss';
+	import '../app.css';
 
 	let loading = true;
 	let playSFX: (() => void) | undefined;
