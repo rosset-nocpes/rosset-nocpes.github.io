@@ -35,7 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"sass": "^1.69.5",
+		"sass": "^1.70.0",
 		"typescript": "^5.3.3"
 	}
 }
