@@ -4,9 +4,9 @@
 </script>
 
 <div class="socials-container">
-	<Social icon="github" tip="coderpy4" link="https://github.com/coderpy4" />
+	<Social icon="github" tip="rosset-nocpes" link="https://github.com/rosset-nocpes" />
 	<Social icon="discord" tip={user.username} link={`https://discord.com/users/${user.id}`} />
-	<Social icon="email" tip="rosset.nocpes@skiff.com" link="mailto:rosset.nocpes@skiff.com" />
+	<Social icon="email" tip="coderpy4@proton.me" link="mailto:coderpy4@proton.me" />
 	<!--<Social icon="kofi" tip="" link="" />--> <!-- TODO Replace -->
 </div>
 
